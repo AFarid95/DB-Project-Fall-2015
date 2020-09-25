@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6669EB1E-B4F0-4E4F-BD7F-D3933E139941}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DB_Project</RootNamespace>
+    <AssemblyName>DB Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAuthorInEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAuthorInEvent.designer.cs">
+      <DependentUpon>AddAuthorInEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBookInDiscussionGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBookInDiscussionGroup.designer.cs">
+      <DependentUpon>AddBookInDiscussionGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBooksToOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBooksToOrder.Designer.cs">
+      <DependentUpon>AddBooksToOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBookToBookSeries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBookToBookSeries.Designer.cs">
+      <DependentUpon>AddBookToBookSeries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomerInDiscussionGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomerInDiscussionGroup.designer.cs">
+      <DependentUpon>AddCustomerInDiscussionGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDiscussionGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDiscussionGroup.designer.cs">
+      <DependentUpon>AddDiscussionGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDistributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDistributor.designer.cs">
+      <DependentUpon>AddDistributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDistributorAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDistributorAddress.designer.cs">
+      <DependentUpon>AddDistributorAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEvent.Designer.cs">
+      <DependentUpon>AddEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomerInEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomerInEvent.designer.cs">
+      <DependentUpon>AddCustomerInEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrder.Designer.cs">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPublisher.designer.cs">
+      <DependentUpon>AddPublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPublisherAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPublisherAddress.designer.cs">
+      <DependentUpon>AddPublisherAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSection.designer.cs">
+      <DependentUpon>AddSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BooksByAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BooksByAuthor.Designer.cs">
+      <DependentUpon>BooksByAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BooksDistributed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BooksDistributed.Designer.cs">
+      <DependentUpon>BooksDistributed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookSeriesByAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookSeriesByAuthor.Designer.cs">
+      <DependentUpon>BookSeriesByAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier.Designer.cs">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="DeleteBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteBook.Designer.cs">
+      <DependentUpon>DeleteBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteBookSeries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteBookSeries.designer.cs">
+      <DependentUpon>DeleteBookSeries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteDiscussionGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteDiscussionGroup.designer.cs">
+      <DependentUpon>DeleteDiscussionGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteDistributor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteDistributor.designer.cs">
+      <DependentUpon>DeleteDistributor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteDistributorAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteDistributorAddress.Designer.cs">
+      <DependentUpon>DeleteDistributorAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePublisher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePublisher.designer.cs">
+      <DependentUpon>DeletePublisher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePublisherAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePublisherAddress.designer.cs">
+      <DependentUpon>DeletePublisherAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteSection.designer.cs">
+      <DependentUpon>DeleteSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditBookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBookInfo.designer.cs">
+      <DependentUpon>EditBookInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDistributorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDistributorInfo.designer.cs">
+      <DependentUpon>EditDistributorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPublisherInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPublisherInfo.designer.cs">
+      <DependentUpon>EditPublisherInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAuthorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAuthorInfo.designer.cs">
+      <DependentUpon>EditAuthorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerAndBooksInOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerAndBooksInOrder.designer.cs">
+      <DependentUpon>CustomerAndBooksInOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPublishersAndTheirContactInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPublishersAndTheirContactInfo.designer.cs">
+      <DependentUpon>ViewPublishersAndTheirContactInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertCustomer.Designer.cs">
+      <DependentUpon>InsertCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBook.Designer.cs">
+      <DependentUpon>SearchBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedures.cs" />
+    <Compile Include="DBManager.cs" />
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DiscussionGroupInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiscussionGroupInformation.Designer.cs">
+      <DependentUpon>DiscussionGroupInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventInfo.Designer.cs">
+      <DependentUpon>EventInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertBook.Designer.cs">
+      <DependentUpon>InsertBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Events.Designer.cs">
+      <DependentUpon>View Events.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBooks.Designer.cs">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDistributorAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDistributorAddress.designer.cs">
+      <DependentUpon>ViewDistributorAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDistributorsAndTheirContactInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDistributorsAndTheirContactInfo.designer.cs">
+      <DependentUpon>ViewDistributorsAndTheirContactInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPublisherAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPublisherAddress.designer.cs">
+      <DependentUpon>ViewPublisherAddress.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAuthorInEvent.resx">
+      <DependentUpon>AddAuthorInEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBookInDiscussionGroup.resx">
+      <DependentUpon>AddBookInDiscussionGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBooksToOrder.resx">
+      <DependentUpon>AddBooksToOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBookToBookSeries.resx">
+      <DependentUpon>AddBookToBookSeries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCustomerInDiscussionGroup.resx">
+      <DependentUpon>AddCustomerInDiscussionGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDiscussionGroup.resx">
+      <DependentUpon>AddDiscussionGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDistributor.resx">
+      <DependentUpon>AddDistributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDistributorAddress.resx">
+      <DependentUpon>AddDistributorAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEvent.resx">
+      <DependentUpon>AddEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCustomerInEvent.resx">
+      <DependentUpon>AddCustomerInEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOrder.resx">
+      <DependentUpon>AddOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPublisher.resx">
+      <DependentUpon>AddPublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPublisherAddress.resx">
+      <DependentUpon>AddPublisherAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSection.resx">
+      <DependentUpon>AddSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BooksByAuthor.resx">
+      <DependentUpon>BooksByAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BooksDistributed.resx">
+      <DependentUpon>BooksDistributed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookSeriesByAuthor.resx">
+      <DependentUpon>BookSeriesByAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier.resx">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteBook.resx">
+      <DependentUpon>DeleteBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteBookSeries.resx">
+      <DependentUpon>DeleteBookSeries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteDiscussionGroup.resx">
+      <DependentUpon>DeleteDiscussionGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteDistributor.resx">
+      <DependentUpon>DeleteDistributor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteDistributorAddress.resx">
+      <DependentUpon>DeleteDistributorAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePublisher.resx">
+      <DependentUpon>DeletePublisher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePublisherAddress.resx">
+      <DependentUpon>DeletePublisherAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteSection.resx">
+      <DependentUpon>DeleteSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiscussionGroupInformation.resx">
+      <DependentUpon>DiscussionGroupInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBookInfo.resx">
+      <DependentUpon>EditBookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDistributorInfo.resx">
+      <DependentUpon>EditDistributorInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPublisherInfo.resx">
+      <DependentUpon>EditPublisherInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventInfo.resx">
+      <DependentUpon>EventInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAuthorInfo.resx">
+      <DependentUpon>EditAuthorInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerAndBooksInOrder.resx">
+      <DependentUpon>CustomerAndBooksInOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPublishersAndTheirContactInfo.resx">
+      <DependentUpon>ViewPublishersAndTheirContactInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertBook.resx">
+      <DependentUpon>InsertBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertCustomer.resx">
+      <DependentUpon>InsertCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="SearchBook.resx">
+      <DependentUpon>SearchBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Events.resx">
+      <DependentUpon>View Events.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBooks.resx">
+      <DependentUpon>ViewBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDistributorAddress.resx">
+      <DependentUpon>ViewDistributorAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDistributorsAndTheirContactInfo.resx">
+      <DependentUpon>ViewDistributorsAndTheirContactInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPublisherAddress.resx">
+      <DependentUpon>ViewPublisherAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
